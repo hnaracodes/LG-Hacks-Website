@@ -772,7 +772,7 @@ section:nth-of-type(3) { animation-delay: 0.4s; }
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: url("images/hack3.jpg") center/cover no-repeat;
+  background: url("assets/hack3.jpg") center/cover no-repeat;
 }
 .hero::after {
   content: "";
