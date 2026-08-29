@@ -116,8 +116,12 @@ dayButtons.forEach(btn => {
 });
 
 class CS_GalleryFilter {
-	filtersSelector = '.cs-button';
-	galleriesSelector = '.cs-gallery';
+	// Scoped to #gallery-404: the bare '.cs-button' selector also matched the 33
+	// FAQ accordion buttons, which have no data-filter. Clicking one passed
+	// undefined to filter(), hiding the gallery (position:absolute) and collapsing
+	// the page above the FAQ, which yanked the viewport down mid-click.
+	filtersSelector = '#gallery-404 .cs-button';
+	galleriesSelector = '#gallery-404 .cs-gallery';
 	activeClass = 'cs-active';
 	hiddenClass = 'cs-hidden';
 
