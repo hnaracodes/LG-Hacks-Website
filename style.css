@@ -2326,3 +2326,23 @@ section{
       justify-content: space-between;
   }
 }
+
+/* Disclaimer banner at top of page */
+.disclaimer-banner {
+  position: relative;
+  z-index: 10001;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.4rem 1rem;
+  background-color: #ff6b35;
+  color: #0d1b2a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .disclaimer-banner {
+    font-size: 0.7rem;
+  }
+}
